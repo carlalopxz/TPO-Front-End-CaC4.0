@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    font-size: 22px;
+}
+
+.contenedor{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(6,auto);
+    grid-template-areas: "header1 header1 header1"
+                         "contenido1 contenido1 contenido1"
+                         "contenido2 contenido2 contenido2"
+                         "contenido3 contenido3 contenido3"
+                         "contenido4 contenido4 contenido4"
+                         "footer footer footer";
+}
+
+.header{
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    grid-area: header1;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+}
+
+.header > .logo{
+    display: flex;
+    flex-flow: column wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.header > .logo > #logo{
+    width: 40%;
+   
+}
+.header > .contenedorNav {
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: flex-end;
+    justify-content: center;
+}
+
+.header > .contenedorNav > .navegacion > a{
+    margin: 8px;
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: "Scheherazade New",'MedievalSharp';
+}
+
+a:link, a:visited, a:active, a:hover{
+    text-decoration: none;
+}
+
+.header > .contenedorNav >.navegation > a:link{
+    color: white;
+}
+.header > .contenedorNav > .navegacion >a:hover{
+    font-size: 1.2rem;
+}
+.header > .contenedorNav > .navegacion >a:visited{
+    color: white;
+}
+
+.header > .covid{
+    display: flex;
+    background-color: #CDCDCD;
+    justify-content: center;
+}
+
+.header > .covid > .texto{
+    font-size: 0.7rem;
+    text-align: center;
+    font-family: 'Scheherazade New', "Oswald", serif;
+}
+
+.contenido1{
+    height: 400px;
+    width: 100%;
+    grid-area: contenido1;
+    margin-top: 110px;
+    background-image: url("../img/fondo1.jpg");
+    background-size:cover;
+}
+
+.contenido1 > .mensajeBienvenida{
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+.contenido1 > .mensajeBienvenida > .contenedorMensaje{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: 'Scheherazade New', "Oswald", serif;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 30%;
+    width: 40%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 40px;
+    font-size: 0.9rem;
+}
+.contenido1 > .mensajeBienvenida > .contenedorImagen {
+    width: 60%;
+}
+
+.contenido1 > .mensajeBienvenida > .contenedorImagen > img{
+    width: 100%;
+
+}
+
+
+
+.segundoContenido{
+    grid-area: contenido2;
+}
+
+.tercerContenido{
+    grid-area:contenido3;
+}
+    
+footer{
+    grid-area: footer;
+}
