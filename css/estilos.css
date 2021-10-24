@@ -85,7 +85,7 @@ a:link, a:visited, a:active, a:hover{
     height: 400px;
     width: 100%;
     grid-area: contenido1;
-    margin-top: 110px;
+    margin-top: 215px;
     background-image: url("../img/fondo1.jpg");
     background-size:cover;
 }
@@ -98,24 +98,34 @@ a:link, a:visited, a:active, a:hover{
     justify-content: space-around;
     align-items: center;
 }
+
 .contenido1 > .mensajeBienvenida > .contenedorMensaje{
     text-align: center;
-    background-color: black;
-    color: white;
     font-family: 'Scheherazade New', "Oswald", serif;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
     align-items: center;
-    height: 30%;
+    height: 20%;
     width: 40%;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 40px;
+    margin: 5px;
+    padding: 5px;
     font-size: 0.9rem;
 }
+
+.contenido1 > .mensajeBienvenida > .contenedorMensaje > .contenedorMensaje1{
+    background-color: black;
+    color: white;
+    width: 80%;
+}
+
+.contenido1 > .mensajeBienvenida > .contenedorMensaje > .contenedorMensaje2{
+    border-bottom: 2px solid black;
+}
+
 .contenido1 > .mensajeBienvenida > .contenedorImagen {
     width: 60%;
+    margin-top: 70px;
 }
 
 .contenido1 > .mensajeBienvenida > .contenedorImagen > img{
@@ -123,13 +133,13 @@ a:link, a:visited, a:active, a:hover{
 
 }
 
-
-
-.segundoContenido{
+.contenido2{
     grid-area: contenido2;
+    background-color: rgba(0,0,0,1);
+    height: 600%;
 }
 
-.tercerContenido{
+.contenido3{
     grid-area:contenido3;
 }
     
