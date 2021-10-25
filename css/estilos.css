@@ -143,7 +143,6 @@ a:link, a:visited, a:active, a:hover{
 .contenedorMain > .contenido2{
     background-color: rgba(0,0,0,1);
     width: 100%;
-    padding: 50px;
 }
 
 .contenido2 > .servicios{
@@ -181,4 +180,41 @@ a:link, a:visited, a:active, a:hover{
 .contenido2 > .servicios > .contenedorImagenesYTexto > .imagenYTexto > .textoLink{
     border-bottom: 3px solid white;
     font-size: 1.2rem;
+}
+
+.contenedorMain >.contenido3{
+    grid-area: contenido3;
+    background-image: url("../img/fondo1.jpg");
+    background-size: cover;
+}
+
+.contenedorMain > .contenido3 >.contenedorTextoSomos{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedorMain > .contenido3 >.contenedorTextoSomos > .imagenSomos{
+    width: 50%;
+    padding: 30px;
+}
+
+.contenedorMain > .contenido3 >.contenedorTextoSomos > .textoSomos{
+    width: 50%;
+    padding: 30px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    font-family: 'Scheherazade New', "Oswald", serif;
+}
+
+.contenedorMain > .contenido3 > .contenedorTextoSomos > .imagenSomos> #somos{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Scheherazade New', "Oswald", serif;
+
+}
+
+.contenedorMain > .contenido3 >.contenedorTextoSomos > .imagenSomos > img{
+    width: 100%;
 }
