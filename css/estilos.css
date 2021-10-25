@@ -218,3 +218,23 @@ a:link, a:visited, a:active, a:hover{
 .contenedorMain > .contenido3 >.contenedorTextoSomos > .imagenSomos > img{
     width: 100%;
 }
+.footer{
+    grid-area: footer;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    font-family: 'Scheherazade New', "Oswald", serif;
+    font-size: 1rem;
+}
+
+.footer > .redesSociales{
+    padding: 20px;
+}
+
+.footer > .redesSociales >a > .fab {
+    color: white;
+}
