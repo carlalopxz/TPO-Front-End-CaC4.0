@@ -47,6 +47,7 @@
     margin: 0.0%;
     color: white;
     padding: 10px;
+    box-sizing: border-box;
     font-size: 1.8vw;
     font-family: "Scheherazade New",'MedievalSharp';
 }
@@ -91,6 +92,8 @@ a:link, a:visited, a:active, a:hover{
 }
 .contenido1{
     margin-top: 14%;
+    padding: 20px;
+    box-sizing: border-box;
     width: 100%;
     background-image: url("../img/fondo1.jpg");
     background-size:cover;
@@ -115,7 +118,8 @@ a:link, a:visited, a:active, a:hover{
     height: 20%;
     width: 40%;
     margin: 1%;
-    padding: 5px;
+    box-sizing: border-box;
+    padding: 15px;
     font-size: 1.5vw;
 }
 
@@ -159,7 +163,9 @@ a:link, a:visited, a:active, a:hover{
 
 .contenido1 > .mensajeBienvenida > .contenedorImagen {
     width: 60%;
-    margin-top: 5%;
+    margin-top: 3%;
+    box-sizing: border-box;
+    padding:10px;
 }
 
 .contenido1 > .mensajeBienvenida > .contenedorImagen > img{
@@ -175,7 +181,8 @@ a:link, a:visited, a:active, a:hover{
 .contenido2 > .servicios{
     font-family: 'Scheherazade New', "Oswald", serif;
     display: flex;
-    padding: 30px;
+    padding: 50px;
+    box-sizing: border-box;
     flex-flow: row wrap;
     justify-content: space-around;
     align-content: space-around;
@@ -186,6 +193,7 @@ a:link, a:visited, a:active, a:hover{
     width: 25%;
     padding-bottom:40px ;
     padding-top: 30px;
+    box-sizing: border-box;
 }
 
 .contenido2 > .servicios > .contenedorImagenesYTexto > .imagenYTexto{
@@ -225,12 +233,14 @@ a:link, a:visited, a:active, a:hover{
 
 .contenedorMain > .contenido3 >.contenedorTextoSomos > .imagenSomos{
     width: 50%;
-    padding: 30px;
+    padding: 35px;
+    box-sizing: border-box;
 }
 
 .contenedorMain > .contenido3 >.contenedorTextoSomos > .textoSomos{
     width: 50%;
-    padding: 30px;
+    padding: 40px;
+    box-sizing: border-box;
     font-size: 1.5vw;
     font-weight: bold;
     font-family: 'Scheherazade New', "Oswald", serif;
@@ -255,12 +265,14 @@ a:link, a:visited, a:active, a:hover{
     justify-content: center;
     align-items: center;
     padding: 50px;
+    box-sizing: border-box;
     font-family: 'Scheherazade New', "Oswald", serif;
     font-size: 1.7vw;
 }
 
 .footer > .redesSociales{
     padding: 20px;
+    box-sizing: border-box;
 }
 
 .footer > .redesSociales >a > .fab {
@@ -269,6 +281,7 @@ a:link, a:visited, a:active, a:hover{
 
 .contenidoServicios{
     padding: 30px;
+    box-sizing: border-box;
     display: flex;
     flex-flow:row nowrap;
     justify-content: space-around;
@@ -315,6 +328,7 @@ a:link, a:visited, a:active, a:hover{
     font-size: 1.7vw;
     margin: 10px;
     padding: 30px;
+    box-sizing: border-box;
     text-align: center;
 }
 
@@ -346,6 +360,7 @@ a:link, a:visited, a:active, a:hover{
     font-family: 'Scheherazade New', "Oswald", serif;
     font-size: 1.7vw;
     padding: 40px;
+    box-sizing: border-box;
     margin: 50px;
 }
 
@@ -371,10 +386,27 @@ a:link, a:visited, a:active, a:hover{
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 800px;
 
 }
 
 .iframeFormulario >iframe{
     width: 40%;
-    height: 700px;
+    height: 100%;
 }
+
+.container-fluid > .mt-3> .mb-4>.formularioCorrecto{
+    border: 3px solid lightgreen; 
+}
+
+.container-fluid > .mt-3 >.mb-4> .formularioIncorrecto{
+    border:  3px solid red;
+}
+
+.container-fluid > .mt-3 >.mb-4 > .mensajeError{
+    display: none;
+}
+.container-fluid > .mt-3 >.mb-4 > .mensajeErrorActivo{
+    display: block;
+}
+

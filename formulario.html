@@ -5,45 +5,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8e988a7031.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
     <title>Formulario</title>
 </head>
 
 <body>
     <div class="container-fluid">
-        <form action="#" class="mt-3">
-            <div class="mb-4">
+        <form action="#" class="mt-3" id="formulario" name="formulario">
+            <div class="mb-4" id="divNombre">
                 <label class="form-label" for="nombre">Nombre:</label>
-                <input type="text" class="form-control" required placeholder="Ingrese su nombre aqui">
+                <input type="text" id="nombre" class="form-control formularioIncorrecto formularioCorrecto"
+                    name="nombre" required placeholder="Ingrese su nombre aqui">
+                <p class="mensajeError">El nombre debe contener mas de 1 caracter y no puede poseer caracteres
+                    especiales</p>
             </div>
-            <div class="mb-4">
+            <div class="mb-4" id="divApellido">
                 <label for="apellido" class="form-label">Apellido:</label>
-                <input type="text" class="form-control" required placeholder="Ingrese su apellido aqui">
+                <input type="text" id="apellido" class="form-control formularioIncorrecto formularioCorrecto"
+                    name="apellido" required placeholder="Ingrese su apellido aqui">
+                <p class="mensajeError">El apellido debe contener mas de 1 caracter y no puede poseer caracteres
+                    especiales</p>
             </div>
-            <div class="mb-4">
+            <div class="mb-4" id="divCelular">
                 <label for="celular" class="form-label">Celular:</label>
-                <input type="number" class="form-control" required placeholder=" (XXX) 00 000 000">
-                <p>*Sin espacios</p>
+                <input type="number" id="celular" class="form-control formularioIncorrecto formularioCorrecto"
+                    name="celular" required placeholder=" (XXX) 00 000 000">
+                <p class="mensajeError">El celular debe estar sin espacios y no puede poseer caracteres especiales:
+                    01139876654 </p>
             </div>
-            <div class="mb-4">
-                <label for="diaDeTurno" class="form-label">Dia de turno:</label>
-                <input type="date" class="form-control" required>
+            <div class="mb-4" id="divCorreo">
+                <label for="correo" class="form-label">Correo Electronico:</label>
+                <input type="email" id="correo" class="form-control formularioIncorrecto formularioCorrecto"
+                    name="correo" required placeholder="nombre@mail.com">
+                <p class="mensajeError">El correo debe tener esta estructura: correousuario@correo.com </p>
             </div>
-            <div class="mb-4">
-                <label for="horaDeTurno" class="form-label">Hora de Turno</label>
-                <input type="time" class="form-control"  required>
+            <div class="mb-4" id="divDiaDeTurno">
+                <label for="diaDeTurno" class="form-label">Dia y hora de turno:</label>
+                <input type="datetime-local" id="diaDeTurno"
+                    class="form-control formularioIncorrecto formularioCorrecto" name="diaDeTurno" required>
+                <p class="mensajeError">Atendemos solo de Lunes a Viernes de 8hs a 16 hs.</p>
             </div>
-            <div class="mb-4 form-check" >
+            <div class="mb-4 form-check " id="servicios">
                 <label for="servicios" class="form-label">Servicios:</label> <br>
-                <input type="checkbox" class="form-check-input">Esculpidas <br>
-                <input type="checkbox" class="form-check-input">Estilismo de Cejas <br>
-                <input type="checkbox" class="form-check-input">Esmaltado Semipermanente
+                <label for="servicios">
+                    <input type="checkbox" name="check" class="form-check-input">Esculpidas
+                </label><br>
+                <label for="servicios">
+                    <input type="checkbox" name="check" class="form-check-input">Estilismo de cejas
+                </label><br>
+                <label for="servicios">
+                    <input type="checkbox" name="check" class="form-check-input">Esmaltado Semipermanente
+                </label><br>
             </div>
-            <div class="d-grid mb-3"  >
+            <div class="d-grid mb-3 formulario__grupo formulario__grupo-btn-enviar">
                 <button type="submit" class="btn btn-dark">Solicitar Turno</button>
             </div>
         </form>
     </div>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
