@@ -2,9 +2,6 @@
     margin: 0;
     padding: 0;
 }
-:root{
-    font-size: 22px;
-}
 
 .contenedor{
     display:grid;
@@ -47,7 +44,7 @@
 }
 
 .header > .contenedorNav > .navegacion > a{
-    margin: 8px;
+    margin: 0.0%;
     color: white;
     padding: 10px;
     font-size: 1.8vw;
@@ -62,7 +59,9 @@ a:link, a:visited, a:active, a:hover{
     color: white;
 }
 .header > .contenedorNav > .navegacion >a:hover{
-    font-size: 1.2rem;
+
+    font-size: 1.5vw;
+
 }
 .header > .contenedorNav > .navegacion >a:visited{
     color: white;
@@ -91,7 +90,7 @@ a:link, a:visited, a:active, a:hover{
 
 }
 .contenido1{
-    margin-top: 170px;
+    margin-top: 14%;
     width: 100%;
     background-image: url("../img/fondo1.jpg");
     background-size:cover;
@@ -115,7 +114,7 @@ a:link, a:visited, a:active, a:hover{
     align-items: center;
     height: 20%;
     width: 40%;
-    margin: 5px;
+    margin: 1%;
     padding: 5px;
     font-size: 1.5vw;
 }
@@ -133,15 +132,21 @@ a:link, a:visited, a:active, a:hover{
 @keyframes cambiarColor{
     0% { 
         width: 40%;
+        text-align: center;
+    font-family: 'Scheherazade New', "Oswald", serif;
         color: white;
         background-color:black;
     }
     50%{
         width: 60%;
+        text-align: center;
+    font-family: 'Scheherazade New', "Oswald", serif;
         color:black;
         background-color: white;
     }
     100%{
+        text-align: center;
+        font-family: 'Scheherazade New', "Oswald", serif;
         width: 80%;
         color: white;
         background-color: black;
@@ -154,7 +159,7 @@ a:link, a:visited, a:active, a:hover{
 
 .contenido1 > .mensajeBienvenida > .contenedorImagen {
     width: 60%;
-    margin-top: 70px;
+    margin-top: 5%;
 }
 
 .contenido1 > .mensajeBienvenida > .contenedorImagen > img{
@@ -170,6 +175,7 @@ a:link, a:visited, a:active, a:hover{
 .contenido2 > .servicios{
     font-family: 'Scheherazade New', "Oswald", serif;
     display: flex;
+    padding: 30px;
     flex-flow: row wrap;
     justify-content: space-around;
     align-content: space-around;
@@ -197,7 +203,7 @@ a:link, a:visited, a:active, a:hover{
 .contenido2 > .servicios > .contenedorImagenesYTexto > .imagenYTexto > a > .linkServicios{
     width: 85%;
     border:6px solid white;
-    border-radius: 200px;
+    border-radius: 100%;
 }
 .contenido2 > .servicios > .contenedorImagenesYTexto > .imagenYTexto > .textoLink{
     border-bottom: 3px solid white;
@@ -262,6 +268,7 @@ a:link, a:visited, a:active, a:hover{
 }
 
 .contenidoServicios{
+    padding: 30px;
     display: flex;
     flex-flow:row nowrap;
     justify-content: space-around;
@@ -269,7 +276,7 @@ a:link, a:visited, a:active, a:hover{
 }
 
 .textoServiciosContenedor{
-    margin-top: 250px;
+    margin-top: 20%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -297,7 +304,7 @@ a:link, a:visited, a:active, a:hover{
 .contenidoServicios > .servicio > .fotoServicio > img{
     width: 100%;
     border: 5px solid white;
-    border-radius: 200px;
+    border-radius: 100%;
 }
 
 .contenidoServicios > .servicio{
@@ -328,7 +335,7 @@ a:link, a:visited, a:active, a:hover{
 
 .contenedorMainPromociones>  .contenedorPromociones{
     display: flex;
-    margin-top: 220px;
+    margin-top: 18%;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
@@ -342,4 +349,32 @@ a:link, a:visited, a:active, a:hover{
     margin: 50px;
 }
 
+.contenedorMainContacto{
+    grid-column-start: contenido1;
+    grid-column-end: contenido4;
+    grid-row-start: contenido1;
+    grid-row-end: contenido4;
+    margin-top: 18%;
+}
 
+.contenedorContacto > .contenedorTextoContacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    font-family: 'Scheherazade New', "Oswald", serif;
+    font-size: 1.5vw;
+}
+
+.iframeFormulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.iframeFormulario >iframe{
+    width: 40%;
+    height: 700px;
+}
