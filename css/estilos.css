@@ -264,7 +264,7 @@ a:link, a:visited, a:active, a:hover{
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 3%;
     box-sizing: border-box;
     font-family: 'Scheherazade New', "Oswald", serif;
     font-size: 1.7vw;
@@ -289,7 +289,7 @@ a:link, a:visited, a:active, a:hover{
 }
 
 .textoServiciosContenedor{
-    margin-top: 20%;
+    margin-top: 18%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -299,14 +299,6 @@ a:link, a:visited, a:active, a:hover{
     font-size: 1.7vw;
     border-top: 3px solid black;
     border-bottom: 3px solid black;
-}
-
-.contenidoServicios > .textoServiciosContenedor{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    font-family: 'Scheherazade New', "Oswald", serif;
-    font-size: 1.7vw;
 }
 
 
@@ -342,6 +334,7 @@ a:link, a:visited, a:active, a:hover{
     grid-row-start: contenido1;
     grid-row-end: contenido4;
     display: flex;
+    height: 500px;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: stretch;
@@ -349,7 +342,7 @@ a:link, a:visited, a:active, a:hover{
 
 .contenedorMainPromociones>  .contenedorPromociones{
     display: flex;
-    margin-top: 18%;
+    margin-top: 15%;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
@@ -410,3 +403,191 @@ a:link, a:visited, a:active, a:hover{
     display: block;
 }
 
+.contenedor > .header > #icono-menu{
+   display: none;
+} 
+
+@media only screen and (max-width: 800px) {
+    .header{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .header .logo{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-content: flex-end;
+        width: 50%;
+ 
+    }
+    .header > .logo > #logo{
+        width: 80%;
+        padding: 3%;
+    }
+
+    .header > .contenedorNav {
+        display: flex;
+        flex-flow: column nowrap;
+        align-content: center;
+        justify-content: space-between;
+    }
+    .header > .covid{
+        display: none;
+    }
+    .contenido1 > .mensajeBienvenida{
+        display: flex;
+        flex-flow: column nowrap;
+        align-content: center;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .contenido1 > .mensajeBienvenida > .contenedorMensaje{
+        display: flex;
+        width: 100%;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contenido1 > .mensajeBienvenida > .contenedorMensaje > .contenedorMensaje1{
+        width: 50%;
+        animation: none;
+    }
+    .contenido1 > .mensajeBienvenida > .contenedorMensaje > .contenedorMensaje2{
+        width: 45%;
+    }
+    .contenido1 > .mensajeBienvenida > .contenedorImagen {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenido1 > .mensajeBienvenida > .contenedorImagen > img{
+        width: 80%;    
+    }
+
+    .contenido2 > .servicios{
+        display: flex;
+        padding: 0;
+        flex-flow: column wrap;
+        justify-content: space-around;
+        align-content: space-around;
+    }
+    .contenido2 > .servicios > .contenedorImagenesYTexto{
+        border: 9px solid white;
+        width: 100%;
+
+    }
+    .contenido2 > .servicios > .contenedorImagenesYTexto > .imagenYTexto{
+        width: 100%;
+    }
+    .contenido2 > .servicios > .contenedorImagenesYTexto > .imagenYTexto > a > .linkServicios{
+        width: 45%;
+        border:6px solid white;
+        border-radius: 100%;
+    }
+    .contenedorMain > .contenido3 >.contenedorTextoSomos{
+        flex-flow: column nowrap;
+    }
+    .contenedorMain > .contenido3 >.contenedorTextoSomos > .imagenSomos{
+        width: 100%;
+        padding: 6%;
+    }
+    .contenedorMain > .contenido3 >.contenedorTextoSomos > .textoSomos{
+        width: 100%;
+        padding: 6%;
+        box-sizing: border-box;
+        font-size: 2.5vw;
+    }
+    .contenidoServicios{
+        padding: 4%;
+        box-sizing: border-box;
+        flex-flow:column nowrap;
+        justify-content: center;
+        align-items:center;
+    }
+    
+    .contenidoServicios > .servicio{
+        width: 100%;
+        margin: 10px;
+    }
+    .contenidoServicios > .servicio > .fotoServicio > img{
+        width: 45%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .contenedor > .header > #icono-menu{
+        margin-left: 2%;
+        cursor: pointer;
+        display: inline-flex;
+        color: white;
+    } 
+    .contenedor > .header>.contenedorNav > #icono-menu-activo{
+        margin-left: 2%;
+        cursor: pointer;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-right: 5%;
+        margin-top:5%;
+        text-align: right;
+
+    } 
+    .header > .contenedorNav{
+        height: 50px;
+        position: fixed;
+        width: 100vw;
+        background-color: white;
+        top: -100vh;
+        height: calc(60% - 50px);
+        text-align: center;
+        transition: all .4s;
+    }
+    .header>.contenedorNav>.navegacion{
+        display: flex;
+        flex-flow: column nowrap;
+        align-items:center;
+    }
+    .header>.contenedorNav>.navegacion>a{
+        margin: 15px 0 0 0 ;
+        background-color: black;
+        line-height: 30px;
+        border: 3px white solid;
+        font-size: 4vw;
+        width: 100%;
+    }
+    .header > .contenedorNav > .navegacion >a:hover{
+        font-size: 4vw;
+        background-color: rgba(0, 0,0, .4);
+    }
+
+    .contenido1 > .mensajeBienvenida > .contenedorMensaje{
+        display: flex;
+        width: 100%;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contenido1 > .mensajeBienvenida > .contenedorMensaje > .contenedorMensaje1{
+        width: 100%;
+        animation: none;
+    }
+    .contenido1 > .mensajeBienvenida > .contenedorMensaje > .contenedorMensaje2{
+        width: 100%;
+    }
+    .contenido1 > .mensajeBienvenida > .contenedorImagen > img{
+        width: 100%;    
+    }
+    .contenedorMainPromociones > .contenedorPromociones > .promociones{
+        font-size: 2.5vw;
+    }
+    .iframeFormulario >iframe{
+        width: 60%;
+        height: 100%;
+    }
+    .contenedorContacto > .contenedorTextoContacto{
+        font-size: 2.5vw;
+    }
+}

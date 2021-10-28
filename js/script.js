@@ -17,7 +17,7 @@ const campos = {
     servicios:false
 };
 
-const validadFormulario = (e) => {
+const validarFormulario = (e) => {
     switch(e.target.name){
         case "nombre":
             validarCampoUno(expresiones.nombre, e.target, "nombre");
@@ -100,8 +100,8 @@ const validarServicios = (campo) => {
 };
 
 inputs.forEach((input) => {
-    input.addEventListener("keyup", validadFormulario)
-    input.addEventListener("blur", validadFormulario)
+    input.addEventListener("keyup", validarFormulario)
+    input.addEventListener("blur", validarFormulario)
 });
 
 
