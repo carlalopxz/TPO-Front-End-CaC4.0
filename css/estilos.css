@@ -578,7 +578,8 @@ a:link, a:visited, a:active, a:hover{
         width: 100%;
     }
     .contenido1 > .mensajeBienvenida > .contenedorImagen > img{
-        width: 100%;    
+        width: 100%;  
+        display: hidden;  
     }
     .contenedorMainPromociones > .contenedorPromociones > .promociones{
         font-size: 2.5vw;
