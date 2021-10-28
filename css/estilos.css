@@ -533,12 +533,12 @@ a:link, a:visited, a:active, a:hover{
         margin-top:5%;
     } 
     .header > .contenedorNav{
-        height: 50px;
+        height: 100vw;
         position: fixed;
         width: 100vw;
         background-color: white;
         top: -100vh;
-        height: calc(60% - 50px);
+        height: calc(60% - 10ovw);
         text-align: center;
         transition: all .4s;
     }
