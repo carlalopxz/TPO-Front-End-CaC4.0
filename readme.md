@@ -1,7 +1,7 @@
     
    
-  <div style="background-color: #CDCDCD;">
-        <div style="border-bottom:3px black solid; ">
+  <div>
+        <div>
             <h3 style="font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: center; padding-top: 19px;">TPO
                 FRON-END CODO A CODO 4.0</h3>
             <img src="https://agustinabellone-portfolio.netlify.app/img/program.png"/>
