@@ -538,7 +538,7 @@ a:link, a:visited, a:active, a:hover{
         width: 100vw;
         background-color: white;
         top: -100vh;
-        height: calc(60% - 10ovw);
+        height: calc(60% - 10vw);
         text-align: center;
         transition: all .4s;
     }
